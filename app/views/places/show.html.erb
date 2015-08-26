@@ -101,7 +101,7 @@
     <%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
     <div class="modal-body">
     <%= f.input :caption %>
-    <%= f.input :place_id %>
+    <%= f.input :picture %>
      </div>
       <div class="modal-footer">
    
@@ -137,7 +137,7 @@
 <h1> Photos </h1>
 
 <% @place.photos.each do |photo| %>
-  
+  <%= image_tag photo.picture %>
     <blockquote>
         <big><%= @photo.caption %></big>
          </blockquote>

@@ -21,7 +21,7 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap', '~> 1.0.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+gem 'carrierwave'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 #gem 'turbolinks'
 
