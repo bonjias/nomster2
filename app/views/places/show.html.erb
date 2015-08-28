@@ -129,7 +129,9 @@
       <%= comment.message %>
       <small><%= comment.user.email %></small>
     </blockquote>
-  
+    
+
+
     <%  end %>
 </div>
 
@@ -137,10 +139,10 @@
 <h1> Photos </h1>
 
 <% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture %>
-    <blockquote>
-        <big><%= @photo.caption %></big>
-         </blockquote>
+  <blockquote> 
+  <%= image_tag(photo.picture,:size => '260x180') %>
+         <big><%= photo.caption %></big>
+        </blockquote>
   
 <% end %>
 </div>
