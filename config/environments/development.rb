@@ -38,7 +38,7 @@ Nomster::Application.configure do
    # enable_starttls_auto: true,
    # user_name: ENV['GMAIL_ADDRESS'],
    # password: ENV['GMAIL_PASSWORD']
-  }
-#end
+#  }
+end
 
 
