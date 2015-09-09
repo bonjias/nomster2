@@ -5,11 +5,11 @@
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: blue;
+  background: darkgrey;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top:10px;
-  margin-bottom:15px;
+  margin-bottom:30px;
   padding:20px;
 }
 
@@ -21,17 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
-  background: url('/assets/tweed.png');
+  background: url('/assets/dark_embroidery.jpg');
   font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
 
 
 .navbar.navbar-inverse {
-  background:url('/assets/dark_embroidery.png');
+  background:url('/assets/tweed.png');
   border-radius: 0;
    box-shadow: 0px 1px 3px #2a2a2a;
    margin-bottom:0;
+   color: #E3E85A;
+  font-family: 'exoblack', sans-serif;
+  font-size:13px;
+  text-align: center;
 }
 
 
@@ -117,7 +121,7 @@ photos {
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    height: 550px;
+    height: 450px;
     width: 100%;
 }
 
