@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class CommentsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test " Add your comment button " do
+   user = FactoryGirl.create(:user)
+    sign_in user
+  	place = FactoryGirl.create(:place)
+  	comment = FactoryGirl.create(:comment)
+end 
+
+
 end
