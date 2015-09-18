@@ -14,3 +14,4 @@ class CommentTest < ActiveSupport::TestCase
 	assert_equal expected,actual
 	end 
 end
+
