@@ -1,12 +1,18 @@
 FactoryGirl.define do
 factory :user do 
-  email "jbias@yesco.com" 
-  password "password123"
-    end  
+  sequence :email do |n|
+      "me#{n}@gmail.com"
+    end
+    password "password99"
+    password_confirmation "password99"
+
+  end  
+
+
 factory :place do 
   name " Toasty" 
   description " best french toast"
-  address " 14 gerard street, Huntington, Ny, 11743 "
+  address "14 Gerard Street, Huntington, Ny, 11743 "
   association :user
   end  
 
