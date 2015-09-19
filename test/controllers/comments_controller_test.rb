@@ -1,12 +1,10 @@
 require 'test_helper'
 
 class CommentsControllerTest < ActionController::TestCase
-  test " Add your comment button " do
-   user = FactoryGirl.create(:user)
-    sign_in user
-  	place = FactoryGirl.create(:place)
-  	comment = FactoryGirl.create(:comment)
-end 
+  test "create comment requires logged in" do
+   post :create, :place_id => 'omg'
+    assert_redirected_to new_user_session_path
+  end
 
 
 end
