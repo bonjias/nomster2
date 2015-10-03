@@ -12,6 +12,13 @@ class CommentTest < ActiveSupport::TestCase
 	expected = 'one star'
 	actual = comment.humanized_rating
 	assert_equal expected,actual
-	end 
+	
+
+  end
+
+
+
+
+
 end
 
